@@ -2,8 +2,6 @@
   "name": "opentelemetry-101",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "https://github.com/habmic/opentelemetry-101.git",
-  "author": "Michael Haberman <habmic@gmail.com",
   "license": "MIT",
   "scripts": {
     "todo": "ts-node-dev todo-service.ts",
