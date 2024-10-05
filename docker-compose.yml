@@ -41,7 +41,7 @@ services:
     ports:
       - 9090:9090
   collector:
-    image: otel/opentelemetry-collector-contrib:0.84.0
+    image: otel/opentelemetry-collector-contrib
     volumes: 
       - ./collector/collector.yml:/etc/otel-collector-config.yaml
     command: ["--config=/etc/otel-collector-config.yaml"]
