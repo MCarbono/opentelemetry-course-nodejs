@@ -7,7 +7,7 @@ const app = express();
 app.get('/auth',(req,res)=>{
     const baggage = opentelemetry.propagation.getActiveBaggage()
     console.log('baggage', baggage)
-    res.json({username: 'Marcelo Carbono', userId: 123})
+    res.json({username: 'Username', userId: 123})
     opentelemetry.trace.getActiveSpan()?.setAttribute('userId', 123)
 })
 
